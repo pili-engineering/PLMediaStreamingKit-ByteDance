@@ -20,9 +20,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target	= "8.0"
 
-  s.dependency 'PLMediaStreamingKit', '~> 2.3.5'
-
-  s.subspec "ex-libMuseProcessor" do |ss1|
+  s.subspec "iphoneos" do |ss1|
     ss1.vendored_frameworks		= 'Pod/Library/*.framework'
   end
 
