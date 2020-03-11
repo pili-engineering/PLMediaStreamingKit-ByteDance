@@ -14,8 +14,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/pili-engineering/PLMediaStreamingKit-ByteDance"
   s.license      = "Apache License 2.0"
   s.author       = { "pili" => "pili@qiniu.com" }
-  s.source       = { :git => "https://github.com/pili-engineering/PLMediaStreamingKit-ByteDance.git", :branch => "master", :tag => "#{s.version}"}
-  s.source_files  = "Pod/Library/**"
+  s.source       = { :http => "https://sdk-release.qnsdk.com/PLMediaStreamingKit-ByteDance-v1.0.0.zip"}
   s.platform     = :ios
   s.requires_arc = true
 
