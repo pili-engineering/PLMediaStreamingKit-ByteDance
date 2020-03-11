@@ -1,0 +1,6 @@
+framework module PLSEffect {
+  umbrella header "PLSEffect.h"
+
+  export *
+  module * { export * }
+}
