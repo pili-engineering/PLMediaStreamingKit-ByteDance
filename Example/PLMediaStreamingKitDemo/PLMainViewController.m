@@ -154,7 +154,7 @@ BEModernStickerPickerViewDelegate
 
 - (void)_getStreamCloudURL {
 //#warning 在这里填写获取推流地址的业务服务器 url
-    NSString *streamServer = @"";
+    NSString *streamServer = @"https://api-demo.qnsdk.com/v1/live/stream";
     NSString *streamID = [NSString randomizedString];
     
     NSString *streamURLString = [streamServer stringByAppendingPathComponent:streamID];

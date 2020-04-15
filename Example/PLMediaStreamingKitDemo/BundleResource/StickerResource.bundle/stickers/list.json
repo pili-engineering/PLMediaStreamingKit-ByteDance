@@ -55,11 +55,6 @@
         "path": "haoqilongbao"
     }, 
     {
-        "tip": "嘟嘴", 
-        "displayName": "暖暖斗篷", 
-        "path": "nuannuandoupeng"
-    }, 
-    {
         "tip": "摇头变身不同恐龙", 
         "displayName": "侏罗纪冒险", 
         "path": "zhuluojimaoxian"
@@ -98,5 +93,10 @@
         "tip": "", 
         "displayName": "卡通女", 
         "path": "katongnv"
+    },
+    {
+        "tip": "嘟嘴",
+        "displayName": "暖暖斗篷",
+        "path": "duanduandoubeng"
     }
 ]
