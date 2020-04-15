@@ -38,6 +38,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		767D4D8920561FF300E619D2 /* PLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 767D4D8820561FF300E619D2 /* PLViewController.m */; };
 		769750EF1A6331080079423B /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769750EC1A6329DC0079423B /* VideoToolbox.framework */; };
+		9C0E1F9C240FF8A400B355A0 /* PLShortVideoKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C0E1F9B240FF8A400B355A0 /* PLShortVideoKit.bundle */; };
 		9C3229C824061DBB00370C4A /* BEDeviceInfoHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3229A524061DBB00370C4A /* BEDeviceInfoHelper.m */; };
 		9C3229C924061DBB00370C4A /* BEModernStickerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3229A724061DBB00370C4A /* BEModernStickerCollectionViewCell.m */; };
 		9C3229CA24061DBB00370C4A /* BEEffectTitleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C3229AA24061DBB00370C4A /* BEEffectTitleCollectionViewCell.m */; };
@@ -132,6 +133,7 @@
 		767D4D8720561FF300E619D2 /* PLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PLViewController.h; sourceTree = "<group>"; };
 		767D4D8820561FF300E619D2 /* PLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PLViewController.m; sourceTree = "<group>"; };
 		769750EC1A6329DC0079423B /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		9C0E1F9B240FF8A400B355A0 /* PLShortVideoKit.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PLShortVideoKit.bundle; sourceTree = "<group>"; };
 		9C3229A524061DBB00370C4A /* BEDeviceInfoHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEDeviceInfoHelper.m; sourceTree = "<group>"; };
 		9C3229A724061DBB00370C4A /* BEModernStickerCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEModernStickerCollectionViewCell.m; sourceTree = "<group>"; };
 		9C3229A824061DBB00370C4A /* BEButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEButtonView.h; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 		9C3229E32406654A00370C4A /* BundleResource */ = {
 			isa = PBXGroup;
 			children = (
+				9C0E1F9B240FF8A400B355A0 /* PLShortVideoKit.bundle */,
 				9C3229E42406654A00370C4A /* ModelResource.bundle */,
 				9C3229E52406654A00370C4A /* ComposeMakeup.bundle */,
 				9C3229E62406654A00370C4A /* StickerResource.bundle */,
@@ -587,6 +590,7 @@
 				0AA48E4E2102001A00EA31B7 /* TestMusic1.m4a in Resources */,
 				0AA48E502102001A00EA31B7 /* TestMusic4.mp3 in Resources */,
 				0AA48E512102001A00EA31B7 /* TestMusic3.mp3 in Resources */,
+				9C0E1F9C240FF8A400B355A0 /* PLShortVideoKit.bundle in Resources */,
 				0AA48E392101FDCC00EA31B7 /* 004.png in Resources */,
 				9C3229EF2406654A00370C4A /* FilterResource.bundle in Resources */,
 				0AA48E422101FDCC00EA31B7 /* bt_paster_delete@3x.png in Resources */,
@@ -665,13 +669,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PLMediaStreamingKitDemo/Pods-PLMediaStreamingKitDemo-frameworks.sh",
-				"${PODS_ROOT}/../../Pod/Library/HappyDNS.framework",
-				"${PODS_ROOT}/../../Pod/Library/PLMediaStreamingKit.framework",
+				"${PODS_ROOT}/PLMediaStreamingKit/Pod/Library/PLMediaStreamingKit.framework",
+				"${PODS_ROOT}/PLMediaStreamingKit/Pod/Library/HappyDNS.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HappyDNS.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PLMediaStreamingKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HappyDNS.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
