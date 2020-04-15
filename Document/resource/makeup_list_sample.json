@@ -1,19 +1,23 @@
+
 {
     "beauty":[
         {
             "path":"beauty_IOS",
-            "displayName":"",
-            "internalKey":"sharp"
+            "displayName":"锐化",
+            "internalKey":"sharp",
+            "intensity":1.0
         },
         {
             "path":"beauty_IOS",
-            "displayName":"",
-            "internalKey":"smooth"
+            "displayName":"磨皮",
+            "internalKey":"smooth",
+            "intensity":1.0
         },
         {
             "path":"beauty_IOS",
-            "displayName":"",
-            "internalKey":"whiten"
+            "displayName":"美白",
+            "internalKey":"whiten",
+            "intensity":1.0
         },
         {
             "path":"beauty_4Items",
@@ -44,67 +48,80 @@
         {
             "path":"reshape",
             "displayName":"瘦脸",
-            "internalKey":"Internal_Deform_Overall"
+            "internalKey":"Internal_Deform_Overall",
+            "intensity":1.0
         },
         {
             "path":"reshape",
             "displayName":"窄脸",
-            "internalKey":"Internal_Deform_CutFace"
+            "internalKey":"Internal_Deform_CutFace",
+            "intensity":1.0
         },
         {
             "path":"reshape",
             "displayName":"小脸",
-            "internalKey":"Internal_Deform_Face"
+            "internalKey":"Internal_Deform_Face",
+            "intensity":1.0
         },
         {
             "path":"reshape",
             "displayName":"大眼",
-            "internalKey":"Internal_Deform_Eye"
+            "internalKey":"Internal_Deform_Eye",
+            "intensity":1.0
         },
         {
             "path":"reshape",
             "displayName":"眼角度",
-            "internalKey":"Internal_Deform_RotateEye"
+            "internalKey":"Internal_Deform_RotateEye",
+            "intensity":1.0
         },
         {
             "path":"reshape",
             "displayName":"瘦颧骨",
-            "internalKey":"Internal_Deform_Zoom_Cheekbone"
+            "internalKey":"Internal_Deform_Zoom_Cheekbone",
+            "intensity":1.0
         },
         {
             "path":"reshape",
             "displayName":"下颌骨",
-            "internalKey":"Internal_Deform_Zoom_Jawbone"
+            "internalKey":"Internal_Deform_Zoom_Jawbone",
+            "intensity":1.0
         },
         {
             "path":"reshape",
             "displayName":"瘦鼻",
-            "internalKey":"Internal_Deform_Nose"
+            "internalKey":"Internal_Deform_Nose",
+            "intensity":1.0
         },
         {
             "path":"reshape",
             "displayName":"长鼻",
-            "internalKey":"Internal_Deform_MovNose"
+            "internalKey":"Internal_Deform_MovNose",
+            "intensity":1.0
         },
         {
             "path":"reshape",
             "displayName":"下巴",
-            "internalKey":"Internal_Deform_Chin"
+            "internalKey":"Internal_Deform_Chin",
+            "intensity":1.0
         },
         {
             "path":"reshape",
             "displayName":"额头",
-            "internalKey":"Internal_Deform_Forehead"
+            "internalKey":"Internal_Deform_Forehead",
+            "intensity":1.0
         },
         {
             "path":"reshape",
             "displayName":" 嘴型",
-            "internalKey":"Internal_Deform_ZoomMouth"
+            "internalKey":"Internal_Deform_ZoomMouth",
+            "intensity":1.0
         },
         {
             "path":"reshape",
             "displayName":"微笑",
-            "internalKey":"Internal_Deform_MouthCorner"
+            "internalKey":"Internal_Deform_MouthCorner",
+            "intensity":1.0
         },
         {
             "path":"reshape",
@@ -123,67 +140,6 @@
             "displayName":"缩人中",
             "internalKey":"Internal_Deform_MovMouth",
             "intensity":1.0
-        }
-    ],
-    "body":[
-        {
-            "path":"body/thin",
-            "displayName":"",
-            "internalKey":""
-        },
-        {
-            "path":"body/longleg",
-            "displayName":"",
-            "internalKey":""
-        }
-    ],
-    "lip":[
-        {
-            "path":"",
-            "displayName":"",
-            "internalKey":"Internal_Makeup_Lips"
-        }
-    ],
-    "blusher":[
-        {
-            "path":"",
-            "displayName":"",
-            "internalKey":"Internal_Makeup_Blusher"
-        }
-    ],
-    "facial":[
-        {
-            "path":"",
-            "displayName":"",
-            "internalKey":"Internal_Makeup_Facial"
-        }
-    ],
-    "pupil":[
-        {
-            "path":"",
-            "displayName":"",
-            "internalKey":"Internal_Makeup_Pupil"
-        }
-    ],
-    "hair":[
-        {
-            "path":"",
-            "displayName":"",
-            "internalKey":""
-        }
-    ],
-    "eyeshadow":[
-        {
-            "path":"",
-            "displayName":"",
-            "internalKey":"Internal_Makeup_Eye"
-        }
-    ],
-    "eyebrow":[
-        {
-            "path":"",
-            "displayName":"",
-            "internalKey":"Internal_Makeup_Brow"
         }
     ]
 }

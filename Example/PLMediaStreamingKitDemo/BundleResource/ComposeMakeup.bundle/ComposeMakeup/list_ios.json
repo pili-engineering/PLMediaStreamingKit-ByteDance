@@ -1,145 +1,401 @@
-
 {
-    "beauty":[
-        {
-            "path":"beauty_IOS",
-            "displayName":"锐化",
-            "internalKey":"sharp",
-            "intensity":1.0
+    "beauty": [{
+            "path": "beauty_IOS",
+            "displayName": "磨皮",
+            "internalKey": "smooth",
+            "intensity": 0.5
         },
         {
-            "path":"beauty_IOS",
-            "displayName":"磨皮",
-            "internalKey":"smooth",
-            "intensity":1.0
+            "path": "beauty_IOS",
+            "displayName": "美白",
+            "internalKey": "whiten",
+            "intensity": 0.5
         },
         {
-            "path":"beauty_IOS",
-            "displayName":"美白",
-            "internalKey":"whiten",
-            "intensity":1.0
+            "path": "beauty_IOS",
+            "displayName": "锐化",
+            "internalKey": "sharp",
+            "intensity": 0.5
         },
         {
-            "path":"beauty_4Items",
-            "displayName":"亮眼",
-            "internalKey":"BEF_BEAUTY_BRIGHTEN_EYE",
-            "intensity":1.0
+            "path": "beauty_4Items",
+            "displayName": "亮眼",
+            "internalKey": "BEF_BEAUTY_BRIGHTEN_EYE",
+            "intensity": 0.5
         },
         {
-            "path":"beauty_4Items",
-            "displayName":"白牙",
-            "internalKey":"BEF_BEAUTY_WHITEN_TEETH",
-            "intensity":1.0
+            "path": "beauty_IOS",
+            "displayName": "白牙",
+            "internalKey": "BEF_BEAUTY_WHITEN_TEETH",
+            "intensity": 0.5
         },
         {
-            "path":"beauty_4Items",
-            "displayName":"黑眼圈",
-            "internalKey":"BEF_BEAUTY_REMOVE_POUCH",
-            "intensity":1.0
+            "path": "beauty_4Items",
+            "displayName": "黑眼圈",
+            "internalKey": "BEF_BEAUTY_REMOVE_POUCH",
+            "intensity": 0.5
         },
         {
-            "path":"beauty_4Items",
-            "displayName":"法令纹",
-            "internalKey":"BEF_BEAUTY_SMILES_FOLDS",
-            "intensity":1.0
+            "path": "beauty_IOS",
+            "displayName": "法令纹",
+            "internalKey": "BEF_BEAUTY_SMILES_FOLDS",
+            "intensity": 0.5
         }
     ],
-    "reshape":[
-        {
-            "path":"reshape",
-            "displayName":"瘦脸",
-            "internalKey":"Internal_Deform_Overall",
-            "intensity":1.0
+    "reshape": [{
+            "path": "reshape",
+            "displayName": "瘦脸",
+            "internalKey": "Internal_Deform_Overall",
+            "intensity": 0.5
         },
         {
-            "path":"reshape",
-            "displayName":"窄脸",
-            "internalKey":"Internal_Deform_CutFace",
-            "intensity":1.0
+            "path": "reshape",
+            "displayName": "窄脸",
+            "internalKey": "Internal_Deform_CutFace",
+            "intensity": 0.5
         },
         {
-            "path":"reshape",
-            "displayName":"小脸",
-            "internalKey":"Internal_Deform_Face",
-            "intensity":1.0
+            "path": "reshape",
+            "displayName": "小脸",
+            "internalKey": "Internal_Deform_Face",
+            "intensity": 0.5
         },
         {
-            "path":"reshape",
-            "displayName":"大眼",
-            "internalKey":"Internal_Deform_Eye",
-            "intensity":1.0
+            "path": "reshape",
+            "displayName": "大眼",
+            "internalKey": "Internal_Deform_Eye",
+            "intensity": 0.5
         },
         {
-            "path":"reshape",
-            "displayName":"眼角度",
-            "internalKey":"Internal_Deform_RotateEye",
-            "intensity":1.0
+            "path": "reshape",
+            "displayName": "眼角度",
+            "internalKey": "Internal_Deform_RotateEye",
+            "intensity": 0.5
         },
         {
-            "path":"reshape",
-            "displayName":"瘦颧骨",
-            "internalKey":"Internal_Deform_Zoom_Cheekbone",
-            "intensity":1.0
+            "path": "reshape",
+            "displayName": "瘦颧骨",
+            "internalKey": "Internal_Deform_Zoom_Cheekbone",
+            "intensity": 0.5
         },
         {
-            "path":"reshape",
-            "displayName":"下颌骨",
-            "internalKey":"Internal_Deform_Zoom_Jawbone",
-            "intensity":1.0
+            "path": "reshape",
+            "displayName": "下颌骨",
+            "internalKey": "Internal_Deform_Zoom_Jawbone",
+            "intensity": 0.5
         },
         {
-            "path":"reshape",
-            "displayName":"瘦鼻",
-            "internalKey":"Internal_Deform_Nose",
-            "intensity":1.0
+            "path": "reshape",
+            "displayName": "瘦鼻",
+            "internalKey": "Internal_Deform_Nose",
+            "intensity": 0.5
         },
         {
-            "path":"reshape",
-            "displayName":"长鼻",
-            "internalKey":"Internal_Deform_MovNose",
-            "intensity":1.0
+            "path": "reshape",
+            "displayName": "长鼻",
+            "internalKey": "Internal_Deform_MovNose",
+            "intensity": 0.5
         },
         {
-            "path":"reshape",
-            "displayName":"下巴",
-            "internalKey":"Internal_Deform_Chin",
-            "intensity":1.0
+            "path": "reshape",
+            "displayName": "下巴",
+            "internalKey": "Internal_Deform_Chin",
+            "intensity": 0.5
         },
         {
-            "path":"reshape",
-            "displayName":"额头",
-            "internalKey":"Internal_Deform_Forehead",
-            "intensity":1.0
+            "path": "reshape",
+            "displayName": "额头",
+            "internalKey": "Internal_Deform_Forehead",
+            "intensity": 0.5
         },
         {
-            "path":"reshape",
-            "displayName":" 嘴型",
-            "internalKey":"Internal_Deform_ZoomMouth",
-            "intensity":1.0
+            "path": "reshape",
+            "displayName": "嘴型",
+            "internalKey": "Internal_Deform_ZoomMouth",
+            "intensity": 0.5
         },
         {
-            "path":"reshape",
-            "displayName":"微笑",
-            "internalKey":"Internal_Deform_MouthCorner",
-            "intensity":1.0
+            "path": "reshape",
+            "displayName": "微笑",
+            "internalKey": "Internal_Deform_MouthCorner",
+            "intensity": 0.5
         },
         {
-            "path":"reshape",
-            "displayName":"眼移动",
-            "internalKey":"Internal_Deform_Eye_Move",
-            "intensity":1.0
+            "path": "reshape",
+            "displayName": "眼距",
+            "internalKey": "Internal_Eye_Spacing",
+            "intensity": 0.5
         },
         {
-            "path":"reshape",
-            "displayName":"眼距",
-            "internalKey":"Internal_Eye_Spacing",
-            "intensity":1.0
+            "path": "reshape",
+            "displayName": "眼移动",
+            "internalKey": "Internal_Deform_Eye_Move",
+            "intensity": 0.5
         },
         {
-            "path":"reshape",
-            "displayName":"缩人中",
-            "internalKey":"Internal_Deform_MovMouth",
-            "intensity":1.0
+            "path": "reshape",
+            "displayName": "缩人中",
+            "internalKey": "Internal_Deform_MovMouth",
+            "intensity": 0.5
+        }
+    ],
+    "blush": [{
+            "path": "blush/weixun",
+            "displayName": "微醺",
+            "internalKey": "Internal_Makeup_Blusher",
+            "intensity": 0.5
+        },
+        {
+            "path": "blush/richang",
+            "displayName": "日常",
+            "internalKey": "Internal_Makeup_Blusher",
+            "intensity": 0.5
+        },
+        {
+            "path": "blush/mitao",
+            "displayName": "蜜桃",
+            "internalKey": "Internal_Makeup_Blusher",
+            "intensity": 0.5
+        },
+        {
+            "path": "blush/tiancheng",
+            "displayName": "甜橙",
+            "internalKey": "Internal_Makeup_Blusher",
+            "intensity": 0.5
+        },
+        {
+            "path": "blush/qiaopi",
+            "displayName": "俏皮",
+            "internalKey": "Internal_Makeup_Blusher",
+            "intensity": 0.5
+        },
+        {
+            "path": "blush/xinji",
+            "displayName": "心机",
+            "internalKey": "Internal_Makeup_Blusher",
+            "intensity": 0.5
+        },
+        {
+            "path": "blush/shaishang",
+            "displayName": "晒伤",
+            "internalKey": "Internal_Makeup_Blusher",
+            "intensity": 0.5
+        }
+    ],
+    "eyebrow": [{
+            "path": "eyebrow/BR01",
+            "displayName": "BRO1",
+            "internalKey": "Internal_Makeup_Brow",
+            "intensity": 0.5
+        },
+        {
+            "path": "eyebrow/BK01",
+            "displayName": "BKO1",
+            "internalKey": "Internal_Makeup_Brow",
+            "intensity": 0.5
+        },
+        {
+            "path": "eyebrow/BK02",
+            "displayName": "BKO2",
+            "internalKey": "Internal_Makeup_Brow",
+            "intensity": 0.5
+        },
+        {
+            "path": "eyebrow/BK03",
+            "displayName": "BKO3",
+            "internalKey": "Internal_Makeup_Brow",
+            "intensity": 0.5
+        }
+    ],
+    "eyeshadow": [{
+            "path": "eyeshadow/dadizong",
+            "displayName": "大地棕",
+            "internalKey": "Internal_Makeup_Eye",
+            "intensity": 0.5
+        },
+        {
+            "path": "eyeshadow/wanxiahong",
+            "displayName": "晚霞红",
+            "internalKey": "Internal_Makeup_Eye",
+            "intensity": 0.5
+        },
+        {
+            "path": "eyeshadow/shaonvfen",
+            "displayName": "少女粉",
+            "internalKey": "Internal_Makeup_Eye",
+            "intensity": 0.5
+        },
+        {
+            "path": "eyeshadow/qizhifen",
+            "displayName": "气质粉",
+            "internalKey": "Internal_Makeup_Eye",
+            "intensity": 0.5
+        },
+        {
+            "path": "eyeshadow/meizihong",
+            "displayName": "梅子红",
+            "internalKey": "Internal_Makeup_Eye",
+            "intensity": 0.5
+        },
+        {
+            "path": "eyeshadow/jiaotangzong",
+            "displayName": "焦糖棕",
+            "internalKey": "Internal_Makeup_Eye",
+            "intensity": 0.5
+        },
+        {
+            "path": "eyeshadow/yuanqiju",
+            "displayName": "元气橘",
+            "internalKey": "Internal_Makeup_Eye",
+            "intensity": 0.5
+        },
+        {
+            "path": "eyeshadow/naichase",
+            "displayName": "奶茶色",
+            "internalKey": "Internal_Makeup_Eye",
+            "intensity": 0.5
+        }
+    ],
+    "facial": [{
+            "path": "facial/xiurong01",
+            "displayName": "修容01",
+            "internalKey": "Internal_Makeup_Facial",
+            "intensity": 0.5
+        },
+        {
+            "path": "facial/xiurong02",
+            "displayName": "修容02",
+            "internalKey": "Internal_Makeup_Facial",
+            "intensity": 0.5
+        },
+        {
+            "path": "facial/xiurong03",
+            "displayName": "修容03",
+            "internalKey": "Internal_Makeup_Facial",
+            "intensity": 0.5
+        },
+        {
+            "path": "facial/xiurong04",
+            "displayName": "修容04",
+            "internalKey": "Internal_Makeup_Facial",
+            "intensity": 0.5
+        }
+    ],
+    "hair": [{
+            "path": "hair/anlan",
+            "displayName": "暗蓝",
+            "internalKey": "",
+            "intensity": 0.5
+        },
+        {
+            "path": "hair/molv",
+            "displayName": "墨绿",
+            "internalKey": "",
+            "intensity": 0.5
+        },
+        {
+            "path": "hair/shenzong",
+            "displayName": "深棕",
+            "internalKey": "",
+            "intensity": 0.5
+        }
+    ],
+    "lip": [{
+            "path": "lip/fuguhong",
+            "displayName": "复古红",
+            "internalKey": "Internal_Makeup_Lips",
+            "intensity": 0.5
+        },
+        {
+            "path": "lip/shaonvfen",
+            "displayName": "少女粉",
+            "internalKey": "Internal_Makeup_Lips",
+            "intensity": 0.5
+        },
+        {
+            "path": "lip/yuanqiju",
+            "displayName": "元气橘",
+            "internalKey": "Internal_Makeup_Lips",
+            "intensity": 0.5
+        },
+        {
+            "path": "lip/xiyouse",
+            "displayName": "西柚色",
+            "internalKey": "Internal_Makeup_Lips",
+            "intensity": 0.5
+        },
+        {
+            "path": "lip/xiguahong",
+            "displayName": "西瓜红",
+            "internalKey": "Internal_Makeup_Lips",
+            "intensity": 0.5
+        },
+        {
+            "path": "lip/sironghong",
+            "displayName": "丝绒红",
+            "internalKey": "Internal_Makeup_Lips",
+            "intensity": 0.5
+        },
+        {
+            "path": "lip/zangjuse",
+            "displayName": "脏橘色",
+            "internalKey": "Internal_Makeup_Lips",
+            "intensity": 0.5
+        },
+        {
+            "path": "lip/meizise",
+            "displayName": "梅子色",
+            "internalKey": "Internal_Makeup_Lips",
+            "intensity": 0.5
+        },
+        {
+            "path": "lip/shanhuse",
+            "displayName": "珊瑚色",
+            "internalKey": "Internal_Makeup_Lips",
+            "intensity": 0.5
+        },
+        {
+            "path": "lip/doushafen",
+            "displayName": "豆沙粉",
+            "internalKey": "Internal_Makeup_Lips",
+            "intensity": 0.5
+        }
+    ],
+    "pupil": [{
+            "path": "pupil/hunxuezong",
+            "displayName": "混血棕",
+            "internalKey": "Internal_Makeup_Pupil",
+            "intensity": 0.5
+        },
+        {
+            "path": "pupil/kekezong",
+            "displayName": "可可棕",
+            "internalKey": "Internal_Makeup_Pupil",
+            "intensity": 0.5
+        },
+        {
+            "path": "pupil/mitaofen",
+            "displayName": "蜜桃粉",
+            "internalKey": "Internal_Makeup_Pupil",
+            "intensity": 0.5
+        },
+        {
+            "path": "pupil/shuiguanghei",
+            "displayName": "水光黑",
+            "internalKey": "Internal_Makeup_Pupil",
+            "intensity": 0.5
+        },
+        {
+            "path": "pupil/xingkonglan",
+            "displayName": "星空蓝",
+            "internalKey": "Internal_Makeup_Pupil",
+            "intensity": 0.5
+        },
+        {
+            "path": "pupil/chujianhui",
+            "displayName": "初见灰",
+            "internalKey": "Internal_Makeup_Pupil",
+            "intensity": 0.5
         }
     ]
 }
