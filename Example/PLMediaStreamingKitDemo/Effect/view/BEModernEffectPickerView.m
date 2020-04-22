@@ -207,6 +207,8 @@ BEModernFilterPickerViewDelegate>
         PLSEffectModel *emptyFilter = [PLSEffectModel new];
         emptyFilter.displayName = @"无";
         emptyFilter.iconImage = [UIImage imageNamed:@"iconCloseButtonNormal"];
+        emptyFilter.path = @"";
+        emptyFilter.intensity = 1.0;
         clear.relatedModel = emptyFilter;
         [filterNode addChild:clear];
         
@@ -279,9 +281,6 @@ BEModernFilterPickerViewDelegate>
         _selectedItem = item;
         PLSMakeUpComponentModel *model = item.relatedModel;
         NSString *key = model.internalKey.length > 0 ? model.internalKey : model.path;
-        if (!key) {
-            key = [self typeInternalKeyMap][@(item.type)];
-        }
         NSMutableDictionary *map = _mapArr[_categoryView.switchTabView.selectedIndex];
         if (key) {
             map[key] = item.relatedModel;
@@ -290,7 +289,7 @@ BEModernFilterPickerViewDelegate>
         }
         [self updateComponent];
         
-        _textSlider.hidden = (item.type == PLSMakeUpTypeBody || item.relatedModel == nil);
+        _textSlider.hidden = (item.type == PLSMakeUpTypeHair || item.type == PLSMakeUpTypeBody || item.relatedModel == nil);
         _textSlider.progress = ((PLSMakeUpComponentModel *)item.relatedModel).intensity;
         
     } else {

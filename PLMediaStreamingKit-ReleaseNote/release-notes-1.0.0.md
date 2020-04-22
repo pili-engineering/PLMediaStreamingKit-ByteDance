@@ -5,7 +5,7 @@ PLMediaStreamingKit-ByteDance 是七牛推出的一款适用于 iOS 平台的具
 
 ### 版本
 - 发布 PLMediaStreamingKit.framework v2.3.5
-- 发布 PLSEffecrt.framework 1.0.0
+- 发布 PLSEffecrt.framework v1.0.0
 
 ### 功能
 - 高级美颜、美型
