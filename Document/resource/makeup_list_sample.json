@@ -284,19 +284,19 @@
     "hair": [{
             "path": "hair/anlan",
             "displayName": "暗蓝",
-            "internalKey": "",
+            "internalKey": "Internal_Makeup_Hair",
             "intensity": 0.5
         },
         {
             "path": "hair/molv",
             "displayName": "墨绿",
-            "internalKey": "",
+            "internalKey": "Internal_Makeup_Hair",
             "intensity": 0.5
         },
         {
             "path": "hair/shenzong",
             "displayName": "深棕",
-            "internalKey": "",
+            "internalKey": "Internal_Makeup_Hair",
             "intensity": 0.5
         }
     ],
