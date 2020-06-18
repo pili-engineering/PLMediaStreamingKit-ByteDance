@@ -285,7 +285,7 @@ BEModernFilterPickerViewDelegate>
         
         // 染发 key 为空，故跳过获取 key 判断
         if (item.type != PLSMakeUpTypeHair) {
-            model.internalKey.length > 0 ? model.internalKey : model.path;
+            key = model.internalKey.length > 0 ? model.internalKey : model.path;
         }
        
         NSMutableDictionary *map = _mapArr[_categoryView.switchTabView.selectedIndex];
