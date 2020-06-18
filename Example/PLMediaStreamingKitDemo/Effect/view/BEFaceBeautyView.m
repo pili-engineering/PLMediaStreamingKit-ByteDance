@@ -23,7 +23,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
-        self.type = PLSMakeUpTypeUndefined;
+        self.type = PLSMakeUpComponentTypeUndefined;
         [self addSubview:self.cv];
         [self.cv mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(self);

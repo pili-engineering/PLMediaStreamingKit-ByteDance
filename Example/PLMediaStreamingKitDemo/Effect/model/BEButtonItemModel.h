@@ -21,11 +21,11 @@
 + (instancetype)beautyModelWithInternalKey:(NSString *)internalKey;
 + (instancetype)reshapeModelWithInternalKey:(NSString *)internalKey;
 + (instancetype)makeupModelWithType:(PLSMakeUpType)type;
-+ (instancetype)bodyModelWithPath:(NSString *)path;
++ (instancetype)bodyModelWithInternalKey:(NSString *)internalKey;
 
 + (instancetype)clearModel;
 
-@property (nonatomic, assign) PLSMakeUpType type;
+@property (nonatomic, assign) PLSMakeUpComponentType type;
 @property (nonatomic, strong) NSString *selectImg;
 @property (nonatomic, strong) NSString *unselectImg;
 @property (nonatomic, strong) NSString *title;

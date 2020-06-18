@@ -25,6 +25,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign) BOOL isEffectOn;
 
+
+/*!
+@property enlargeFactor
+@brief 放大输出结果的系数，如果应用了微整形效果建议设为1.05，以裁减掉边框变形的部分
+
+@since      v2.0.0
+*/
+@property(nonatomic, assign) CGPoint enlargeFactor;
+
 /*!
  @property glContext
  @brief OpenGL ES上下文
@@ -109,7 +118,7 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - process frame
 /*!
  @method processBuffer:withTimestamp:videoOrientation:deviceOrientation
- @abstract   处理帧数据
+ @abstract   处理帧数据，默认纹理格式为 GL_BGRA
  
  @param buffer pixelbuffer
  @param timestamp timestap
@@ -118,13 +127,33 @@ NS_ASSUME_NONNULL_BEGIN
  
  @since      v1.0.0
  */
-- (void)processBuffer:(CVPixelBufferRef)buffer withTimestamp:(double)timestamp
+- (void)processBuffer:(CVPixelBufferRef)buffer
+        withTimestamp:(double)timestamp
+     videoOrientation:(AVCaptureVideoOrientation)orientation
+    deviceOrientation:(AVCaptureVideoOrientation)deviceOrientation;
+
+
+/*!
+ @method processBuffer:withTimestamp:videoOrientation:deviceOrientation
+ @abstract   处理帧数据
+ 
+ @param buffer pixelbuffer
+ @param format 纹理格式
+ @param timestamp timestap
+ @param orientation 摄像头输出的图像方向
+ @param deviceOrientation 设备方向
+ 
+ @since      v1.0.3
+ */
+- (void)processBuffer:(CVPixelBufferRef)buffer
+               format:(GLenum)format
+            timestamp:(double)timestamp
      videoOrientation:(AVCaptureVideoOrientation)orientation
     deviceOrientation:(AVCaptureVideoOrientation)deviceOrientation;
 
 /*!
  @method processTexture:width:height:timestamp:videoOrientation:deviceOrientation:
- @abstract   处理帧数据
+ @abstract   处理帧数据，默认在回调的 OpenGL 线程，默认纹理格式为 GL_RGBA
  
  @param texture texture id
  @param width texture的宽
@@ -136,6 +165,28 @@ NS_ASSUME_NONNULL_BEGIN
  @since      v1.0.0
  */
 - (GLuint)processTexture:(GLuint)texture
+                   width:(int)width
+                  height:(int)height
+               timestamp:(double)timestamp
+        videoOrientation:(AVCaptureVideoOrientation)orientation
+       deviceOrientation:(AVCaptureVideoOrientation)deviceOrientation;
+
+/*!
+ @method processTexture:width:height:timestamp:videoOrientation:deviceOrientation:
+ @abstract   处理帧数据，默认在回调的 OpenGL 线程
+ 
+ @param texture texture id
+ @param format 纹理格式
+ @param width texture的宽
+ @param height texture的高
+ @param timestamp 时间戳
+ @param orientation 摄像头输出的图像方向
+ @param deviceOrientation 设备方向
+ 
+ @since      v1.0.3
+ */
+- (GLuint)processTexture:(GLuint)texture
+                  format:(GLenum)format
                    width:(int)width
                   height:(int)height
                timestamp:(double)timestamp

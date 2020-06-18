@@ -8,6 +8,7 @@
 #import "BEButtonViewCell.h"
 #import "BETextSliderView.h"
 #import "BECategoryView.h"
+#import "BEButtonItemModel.h"
 
 NSInteger TYPE_NO_SELECT = -2;
 
@@ -97,16 +98,16 @@ BEModernFilterPickerViewDelegate>
 - (void)loadData {
     NSMutableArray *cat = [NSMutableArray new];
     
-    NSArray<PLSMakeUpComponentModel *> *beautyArr = [_dataManager fetchMakeUpComponentsWithType:PLSMakeUpTypeBeauty];
+    NSArray<PLSMakeUpComponentModel *> *beautyArr = [_dataManager fetchMakeUpComponentsWithType:PLSMakeUpComponentTypeBeauty];
     if ( beautyArr.count > 0) {
         [cat addObject:[BEEffectCategoryModel categoryWithType:BEEffectPanelTabBeautyFace title:@"美颜"]];
         [_mapArr addObject:[NSMutableDictionary new]];
         BEButtonItemModel *beautyNode = [BEButtonItemModel new];
-        beautyNode.type = PLSMakeUpTypeUndefined;
+        beautyNode.type = PLSMakeUpComponentTypeUndefined;
         [_rootNode addChild:beautyNode];
         
         BEButtonItemModel *clear = [BEButtonItemModel clearModel];
-        clear.type = PLSMakeUpTypeBeauty;
+        clear.type = PLSMakeUpComponentTypeBeauty;
         [beautyNode addChild:clear];
         
         for (PLSMakeUpComponentModel *item in beautyArr) {
@@ -117,16 +118,16 @@ BEModernFilterPickerViewDelegate>
         }
     }
     
-    NSArray<PLSMakeUpComponentModel *> *reshapeArr = [_dataManager fetchMakeUpComponentsWithType:PLSMakeUpTypeReshape];
+    NSArray<PLSMakeUpComponentModel *> *reshapeArr = [_dataManager fetchMakeUpComponentsWithType:PLSMakeUpComponentTypeReshape];
     if (reshapeArr.count > 0) {
         [cat addObject:[BEEffectCategoryModel categoryWithType:BEEffectPanelTabBeautyReshape title:@"美型"]];
         [_mapArr addObject:[NSMutableDictionary new]];
         BEButtonItemModel *reshapeNode = [BEButtonItemModel new];
-        reshapeNode.type = PLSMakeUpTypeUndefined;
+        reshapeNode.type = PLSMakeUpComponentTypeUndefined;
         [_rootNode addChild:reshapeNode];
         
         BEButtonItemModel *clear = [BEButtonItemModel clearModel];
-        clear.type = PLSMakeUpTypeReshape;
+        clear.type = PLSMakeUpComponentTypeReshape;
         [reshapeNode addChild:clear];
         
         for (PLSMakeUpComponentModel *item in reshapeArr) {
@@ -137,20 +138,20 @@ BEModernFilterPickerViewDelegate>
         }
     }
     
-    NSArray<PLSMakeUpComponentModel *> *bodyArr = [_dataManager fetchMakeUpComponentsWithType:PLSMakeUpTypeBody];
+    NSArray<PLSMakeUpComponentModel *> *bodyArr = [_dataManager fetchMakeUpComponentsWithType:PLSMakeUpComponentTypeBody];
     if (bodyArr.count > 0) {
         [cat addObject:[BEEffectCategoryModel categoryWithType:BEEffectPanelTabBeautyBody title:@"美体"]];
         [_mapArr addObject:[NSMutableDictionary new]];
         BEButtonItemModel *bodyNode = [BEButtonItemModel new];
-        bodyNode.type = PLSMakeUpTypeUndefined;
+        bodyNode.type = PLSMakeUpComponentTypeUndefined;
         [_rootNode addChild:bodyNode];
         
         BEButtonItemModel *clear = [BEButtonItemModel clearModel];
-        clear.type = PLSMakeUpTypeBody;
+        clear.type = PLSMakeUpComponentTypeBody;
         [bodyNode addChild:clear];
         
         for (PLSMakeUpComponentModel *item in bodyArr) {
-            BEButtonItemModel *btItem = [BEButtonItemModel bodyModelWithPath:item.path];
+            BEButtonItemModel *btItem = [BEButtonItemModel bodyModelWithInternalKey:item.internalKey];
             btItem.relatedModel = item;
             btItem.title = item.displayName;
             [bodyNode addChild:btItem];
@@ -172,8 +173,8 @@ BEModernFilterPickerViewDelegate>
     BEButtonItemModel *clear = [BEButtonItemModel clearModel];
     [makeupNode addChild:clear];
     for (NSInteger i = PLSMakeUpTypeLip; i < PLSMakeUpTypeEnd; i ++) {
-        NSArray<PLSMakeUpComponentModel *> *makeupArr = [_dataManager fetchMakeUpComponentsWithType:(PLSMakeUpType)i];
-        if (makeupArr.count > 0) {
+        PLSMakeupModel * makeup = [_dataManager fetchMakeUpWithType:(PLSMakeUpType)i];
+        if (makeup.effectList.count > 0) {
             BEButtonItemModel *node = [BEButtonItemModel makeupModelWithType:i];
             node.title = map[@(i)];
             [makeupNode addChild:node];
@@ -181,7 +182,7 @@ BEModernFilterPickerViewDelegate>
             BEButtonItemModel *clear = [BEButtonItemModel clearModel];
             clear.type = i;
             [node addChild:clear];
-            for (PLSMakeUpComponentModel *item in makeupArr) {
+            for (PLSMakeUpComponentModel *item in makeup.effectList) {
                 BEButtonItemModel *btItem = [BEButtonItemModel makeupModelWithType:i];
                 btItem.relatedModel = item;
                 btItem.title = item.displayName;
@@ -252,13 +253,13 @@ BEModernFilterPickerViewDelegate>
 
 - (NSDictionary *)typeInternalKeyMap {
     return @{
-        @(PLSMakeUpTypeLip):PLS_EFFECT_INTERNALKEY_LIP,
-        @(PLSMakeUpTypeBlush):PLS_EFFECT_INTERNALKEY_BLUSHER,
-        @(PLSMakeUpTypeFacial):PLS_EFFECT_INTERNALKEY_FACIAL,
-        @(PLSMakeUpTypePupil):PLS_EFFECT_INTERNALKEY_PUPIL,
-        @(PLSMakeUpTypeHair):PLS_EFFECT_INTERNALKEY_HAIR,
-        @(PLSMakeUpTypeEyeshadow):PLS_EFFECT_INTERNALKEY_EYESHADOW,
-        @(PLSMakeUpTypeEyebrow):PLS_EFFECT_INTERNALKEY_EYEBROW
+        @(PLSMakeUpTypeLip):@"Internal_Makeup_Lips",
+        @(PLSMakeUpTypeBlush):@"Internal_Makeup_Blusher",
+        @(PLSMakeUpTypeFacial):@"Internal_Makeup_Facial",
+        @(PLSMakeUpTypePupil):@"Internal_Makeup_Pupil",
+        @(PLSMakeUpTypeHair):@"",
+        @(PLSMakeUpTypeEyeshadow):@"Internal_Makeup_Eye",
+        @(PLSMakeUpTypeEyebrow):@"Internal_Makeup_Brow"
     };
 }
 
@@ -280,7 +281,13 @@ BEModernFilterPickerViewDelegate>
     if (item.children.count == 0) {
         _selectedItem = item;
         PLSMakeUpComponentModel *model = item.relatedModel;
-        NSString *key = model.internalKey.length > 0 ? model.internalKey : model.path;
+        NSString *key = @"";
+        
+        // 染发 key 为空，故跳过获取 key 判断
+        if (item.type != PLSMakeUpTypeHair) {
+            model.internalKey.length > 0 ? model.internalKey : model.path;
+        }
+       
         NSMutableDictionary *map = _mapArr[_categoryView.switchTabView.selectedIndex];
         if (key) {
             map[key] = item.relatedModel;
@@ -289,7 +296,7 @@ BEModernFilterPickerViewDelegate>
         }
         [self updateComponent];
         
-        _textSlider.hidden = (item.type == PLSMakeUpTypeHair || item.type == PLSMakeUpTypeBody || item.relatedModel == nil);
+        _textSlider.hidden = (item.type == PLSMakeUpTypeHair || item.relatedModel == nil);
         _textSlider.progress = ((PLSMakeUpComponentModel *)item.relatedModel).intensity;
         
     } else {

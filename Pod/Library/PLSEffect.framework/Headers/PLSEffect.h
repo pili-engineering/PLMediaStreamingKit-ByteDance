@@ -22,3 +22,5 @@ FOUNDATION_EXPORT const unsigned char PLSEffectVersionString[];
 #import <PLSEffect/PLSEffectDataManager.h>
 #import <PLSEffect/PLSEffectManager.h>
 #import <PLSEffect/PLSEVersionInfo.h>
+#import <PLSEffect/PLSMakeupModel.h>
+#import <PLSEffect/PLETypeDefines.h>
