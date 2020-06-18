@@ -9,12 +9,12 @@
 Pod::Spec.new do |s|
 
   s.name         = "PLMediaStreamingKit-ByteDance"
-  s.version      = "1.0.2"
+  s.version      = "2.0.0"
   s.summary      = "PILI iOS media streaming framework via RTMP."
   s.homepage     = "https://github.com/pili-engineering/PLMediaStreamingKit-ByteDance"
   s.license      = "Apache License 2.0"
   s.author       = { "pili" => "pili@qiniu.com" }
-  s.source       = { :http => "https://sdk-release.qnsdk.com/PLMediaStreamingKit-ByteDance-v1.0.2.zip"}
+  s.source       = { :http => "https://sdk-release.qnsdk.com/PLMediaStreamingKit-ByteDance-v2.0.0.zip"}
   s.platform     = :ios
   s.requires_arc = true
 

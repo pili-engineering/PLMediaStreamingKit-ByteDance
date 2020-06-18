@@ -47,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*!
  @property iconImage
- @brief 默认读取path/icon.png文件
+ @brief 默认读取 config.json 文件中 iconName 对应图片名称
  
  @since      v1.0.0
  */
