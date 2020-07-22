@@ -1,0 +1,7 @@
+**/Pods/
+**/Podfile.lock
+**/build
+**/Build
+
+## User settings
+**/xcuserdata/
