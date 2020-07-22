@@ -145,8 +145,9 @@ def deal_filter():
         filter_dict = {'filePath': 'Filter/' + file_name, 'iconName': icon_name,
                        'displayName': get_filter_name_by_file_name(file_name), 'defaultIntensity': filter_intensity}
         content.append(filter_dict)
-    with open(filter_root_dir + '/config.json', 'w') as file:
-        json.dump(content, file, ensure_ascii=False, indent=4)
+    if content:
+        with open(filter_root_dir + '/config.json', 'w') as file:
+            json.dump(content, file, ensure_ascii=False, indent=4)
     show_info_log('已完成滤镜资源文件的配置')
 
 
@@ -205,8 +206,9 @@ def deal_sticker():
         temp_dict = {'filePath': 'stickers/' + file_name, 'iconName': file_name + '.png',
                      'displayName': icon_name, 'tip': tip}
         content.append(temp_dict)
-    with open(sticker_root_dir + '/config.json', 'w') as file:
-        json.dump(content, file, ensure_ascii=False, indent=4)
+    if content:
+        with open(sticker_root_dir + '/config.json', 'w') as file:
+            json.dump(content, file, ensure_ascii=False, indent=4)
     show_info_log('已完成动态贴纸资源文件的配置')
 
 
@@ -222,8 +224,9 @@ def deal_compose_makeup():
     deal_reshape(compose_root_dir, content)
     deal_body(compose_root_dir, content)
     deal_makeup(compose_root_dir, content)
-    with open(compose_root_dir + '/config.json', 'w') as file:
-        json.dump(content, file, ensure_ascii=False, indent=4)
+    if content:
+        with open(compose_root_dir + '/config.json', 'w') as file:
+            json.dump(content, file, ensure_ascii=False, indent=4)
 
 
 def deal_beauty(compose_root_dir, content):
@@ -245,7 +248,8 @@ def deal_beauty(compose_root_dir, content):
                 beauty_dict = {'filePath': 'ComposeMakeup/' + dir_name, 'iconName': icon_name,
                                'displayName': effect_name, 'key': key, 'defaultIntensity': beauty_intensity}
                 beauty.append(beauty_dict)
-    content['beauty'] = beauty
+    if beauty:
+        content['beauty'] = beauty
     show_info_log('已完成美颜资源文件的配置')
 
 
@@ -268,7 +272,8 @@ def deal_reshape(compose_root_dir, content):
                 reshape_dict = {'filePath': 'ComposeMakeup/' + dir_name, 'iconName': icon_name,
                                 'displayName': effect_name, 'key': key, 'defaultIntensity': reshape_intensity}
                 reshape.append(reshape_dict)
-    content['reshape'] = reshape
+    if reshape:
+        content['reshape'] = reshape
     show_info_log('已完成微整形资源文件的配置')
 
 
@@ -292,7 +297,8 @@ def deal_body(compose_root_dir, content):
         body_dict = {'filePath': 'ComposeMakeup/body/allslimqy', 'iconName': icon_name,
                      'displayName': effect_name, 'key': key, 'defaultIntensity': body_intensity}
         body.append(body_dict)
-    content['body'] = body
+    if body:
+        content['body'] = body
     show_info_log('已完成美体资源文件的配置')
 
 
@@ -327,7 +333,8 @@ def deal_makeup(compose_root_dir, content):
             effect.append(effect_dict)
         effect_type['effects'] = effect
         makeup[makeup_file_name] = effect_type
-    content['makeup'] = makeup
+    if makeup:
+        content['makeup'] = makeup
     show_info_log('已完成美妆资源文件的配置')
 
 
