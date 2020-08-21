@@ -64,7 +64,11 @@ end
 $ pod install
 ```      
 
-####注意：除了上述包通过 pod 载入之外，项目中还需要添加 libeffect-sdk.a ,  可在 Example/PLMediaStreamingKitDemo/Librarys/ 下获取
+**注意：除了上述包通过 pod 载入之外，项目中还需要添加 libeffect-sdk.a ,  可在 Example/PLMediaStreamingKitDemo/Librarys/ 下获取**
+
+还需参照 demo 添加相关依赖库，大致如下图：
+
+![](http://docs.qnsdk.com/iOS-PLMediaStreamingKit-ByteDance-link-binary.png)
 
 ## 4.4 添加权限说明
 我们需要在 Info.plist 文件中添加相应权限的说明，否则程序在 iOS 10 系统上会出现崩溃。需要添加如下权限：
