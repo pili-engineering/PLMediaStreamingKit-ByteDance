@@ -870,7 +870,7 @@
 					"$(PROJECT_DIR)/PLMediaStreamingKitDemo/Weixin",
 					"$(PROJECT_DIR)/PLMediaStreamingKitDemo/Librarys",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.0.1;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qbox.PLMediaStreamingKit.ByteDance.Demo;
 				PRODUCT_NAME = PLMediaStreamingKitDemo;
@@ -897,7 +897,7 @@
 					"$(PROJECT_DIR)/PLMediaStreamingKitDemo/Weixin",
 					"$(PROJECT_DIR)/PLMediaStreamingKitDemo/Librarys",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.0.1;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.qbox.PLMediaStreamingKit.ByteDance.Demo;
