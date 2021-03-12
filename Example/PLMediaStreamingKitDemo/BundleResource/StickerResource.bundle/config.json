@@ -1,122 +1,122 @@
 [
     {
-        "tip": "招财猫",
-        "displayName": "招财猫",
+        "filePath": "stickers/zhaocaimao",
         "iconName": "zhaocaimao.png",
-        "filePath": "stickers/zhaocaimao"
+        "displayName": "招财猫",
+        "tip": "招财猫"
     },
     {
-        "tip": "比心试试",
-        "displayName": "表白七夕",
+        "filePath": "stickers/biaobaiqixi",
         "iconName": "biaobaiqixi.png",
-        "filePath": "stickers/biaobaiqixi"
+        "displayName": "表白七夕",
+        "tip": "比心试试"
     },
     {
-        "tip": "绅士",
-        "displayName": "绅士",
+        "filePath": "stickers/shenshi",
         "iconName": "shenshi.png",
-        "filePath": "stickers/shenshi"
+        "displayName": "绅士",
+        "tip": "绅士"
     },
     {
-        "tip": "眨眼试试",
-        "displayName": "恐龙测试",
+        "filePath": "stickers/konglongceshi",
         "iconName": "konglongceshi.png",
-        "filePath": "stickers/konglongceshi"
+        "displayName": "恐龙测试",
+        "tip": "眨眼试试"
     },
     {
-        "tip": "南瓜滚滚",
-        "displayName": "南瓜滚滚",
+        "filePath": "stickers/nanguagungun",
         "iconName": "nanguagungun.png",
-        "filePath": "stickers/nanguagungun"
+        "displayName": "南瓜滚滚",
+        "tip": "南瓜滚滚"
     },
     {
-        "tip": "极简兔耳",
-        "displayName": "极简兔耳",
+        "filePath": "stickers/jijiantuer",
         "iconName": "jijiantuer.png",
-        "filePath": "stickers/jijiantuer"
+        "displayName": "极简兔耳",
+        "tip": "极简兔耳"
     },
     {
-        "tip": "挡脸换面具",
-        "displayName": "假面",
+        "filePath": "stickers/jiamian",
         "iconName": "jiamian.png",
-        "filePath": "stickers/jiamian"
+        "displayName": "假面",
+        "tip": "挡脸换面具"
     },
     {
-        "tip": "公主面具",
-        "displayName": "公主面具",
+        "filePath": "stickers/gongzhumianju",
         "iconName": "gongzhumianju.png",
-        "filePath": "stickers/gongzhumianju"
+        "displayName": "公主面具",
+        "tip": "公主面具"
     },
     {
-        "tip": "点头",
-        "displayName": "恐龙时光机",
+        "filePath": "stickers/konglongshiguangji",
         "iconName": "konglongshiguangji.png",
-        "filePath": "stickers/konglongshiguangji"
+        "displayName": "恐龙时光机",
+        "tip": "点头"
     },
     {
-        "tip": "先抬头后张嘴",
-        "displayName": "唤龙术",
+        "filePath": "stickers/huanlongshu",
         "iconName": "huanlongshu.png",
-        "filePath": "stickers/huanlongshu"
+        "displayName": "唤龙术",
+        "tip": "先抬头后张嘴"
     },
     {
-        "tip": "比ok手势",
-        "displayName": "好奇龙宝",
+        "filePath": "stickers/haoqilongbao",
         "iconName": "haoqilongbao.png",
-        "filePath": "stickers/haoqilongbao"
+        "displayName": "好奇龙宝",
+        "tip": "比ok手势"
     },
     {
-        "tip": "摇头变身不同恐龙",
-        "displayName": "侏罗纪冒险",
+        "filePath": "stickers/zhuluojimaoxian",
         "iconName": "zhuluojimaoxian.png",
-        "filePath": "stickers/zhuluojimaoxian"
+        "displayName": "侏罗纪冒险",
+        "tip": "摇头变身不同恐龙"
     },
     {
-        "tip": "我超甜",
-        "displayName": "我超甜",
+        "filePath": "stickers/wochaotian",
         "iconName": "wochaotian.png",
-        "filePath": "stickers/wochaotian"
+        "displayName": "我超甜",
+        "tip": "我超甜"
     },
     {
-        "tip": "哈气试试",
-        "displayName": "哈气",
+        "filePath": "stickers/haqi",
         "iconName": "haqi.png",
-        "filePath": "stickers/haqi"
+        "displayName": "哈气",
+        "tip": "哈气试试"
     },
     {
-        "tip": "卡通男",
-        "displayName": "卡通男",
+        "filePath": "stickers/katongnan",
         "iconName": "katongnan.png",
-        "filePath": "stickers/katongnan"
+        "displayName": "卡通男",
+        "tip": "卡通男"
     },
     {
-        "tip": "眨眼嘟嘴",
-        "displayName": "蔚蓝冬日妆",
+        "filePath": "stickers/weilandongrizhuang",
         "iconName": "weilandongrizhuang.png",
-        "filePath": "stickers/weilandongrizhuang"
+        "displayName": "蔚蓝冬日妆",
+        "tip": "眨眼嘟嘴试试哦"
     },
     {
-        "tip": "堵嘴",
+        "filePath": "stickers/duanduandoubeng",
+        "iconName": "duanduandoubeng.png",
         "displayName": "暖暖斗篷",
-        "iconName": "nuannuandoupeng.png",
-        "filePath": "stickers/duanduandoubeng"
+        "tip": "暖暖斗篷"
     },
     {
-        "tip": "黑猫眼镜",
-        "displayName": "黑猫眼镜",
+        "filePath": "stickers/heimaoyanjing",
         "iconName": "heimaoyanjing.png",
-        "filePath": "stickers/heimaoyanjing"
+        "displayName": "黑猫眼镜",
+        "tip": "黑猫眼镜"
     },
     {
-        "tip": "蕾丝兔耳",
-        "displayName": "蕾丝兔耳",
+        "filePath": "stickers/leisituer",
         "iconName": "leisituer.png",
-        "filePath": "stickers/leisituer"
+        "displayName": "蕾丝兔耳",
+        "tip": "蕾丝兔耳"
     },
     {
-        "tip": "卡通女",
-        "displayName": "卡通女",
+        "filePath": "stickers/katongnv",
         "iconName": "katongnv.png",
-        "filePath": "stickers/katongnv"
+        "displayName": "卡通女",
+        "tip": "卡通女"
     }
 ]
